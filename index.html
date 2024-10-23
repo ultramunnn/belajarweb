@@ -7,33 +7,42 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <main>
-      <h2>Kabupaten Kediri</h2>
+      <header>
+        <div class="jumbotron">
+          <h2>Kabupaten Kediri</h2>
+          <p>
+            Daerah yang terkenal akan gunung aktif yang meletus pada tahun 2014
+            yaitu Gunung Kelud.
+          </p>
+        </div>
 
-      <p>
-        Daerah yang terkenal akan gunung aktif yang meletus pada tahun 2014
-        yaitu Gunung Kelud.
-      </p>
-      <nav>
-        <ul>
-          <li><a href="#sejarah">Sejarah</a></li>
-          <li><a href="#geografis">Geografis</a></li>
-          <li><a href="#wisata">Wisata</a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="#sejarah">Sejarah</a></li>
+            <li><a href="#geografis">Geografis</a></li>
+            <li><a href="#wisata">Wisata</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <aside>
-        <article class="sejarah">
-          <header>
-            <h3 id="sejarah">Sejarah</h3>
-          </header>
-          <img src="/img/sejarah.jpg" alt="sejarah-kediri" width="300" />
+      <div id="content">
+        <article id="sejarah" class="card">
+          <h3>Sejarah</h3>
+
+          <img
+            src="/img/sejarah.jpg"
+            alt="sejarah-kediri"
+            class="featured-image"
+          />
           <p>
             Kerajaan Kediri adalah kerajaan dari masa Hindu-Buddha yang
             terkadang disebut juga sebagai Kerajaan Panjalu atau Kerajaan Daha.
@@ -49,11 +58,10 @@
           </p>
         </article>
 
-        <article class="geografis">
-          <header>
-            <h3 id="geografis">Geografis</h3>
-          </header>
-          <img src="img/jembatankediri.jpg" alt="jembatankediri" width="300" />
+        <article id="geografis" class="card">
+          <h3>Geografis</h3>
+
+          <img src="img/gumul.jpg" alt="gumul" class="featured-image" />
           <p>
             Kabupaten Kediri berbatasan dengan Kabupaten Jombang di Utara,
             Kabupaten Malang dan Kabupaten Blitar di Timur, Kabupaten Blitar dan
@@ -65,12 +73,14 @@
           </p>
         </article>
 
-        <article>
-          <header>
-            <h3 id="wisata">Wisata</h3>
-          </header>
+        <article id="wisata" class="card">
+          <h3>Wisata</h3>
 
-          <img src="img/gunungkelud.jpg" alt="gunungkelud" width="300" />
+          <img
+            src="img/gunungkelud.jpg"
+            alt="gunungkelud"
+            class="featured-image"
+          />
           <p>
             Berwisata ke Kabupaten Kediri, Jawa Timur, rasanya belum lengkap
             tanpa sekalian mengunjungi Gunung Kelud. Gunung berapi yang sempat
@@ -83,13 +93,39 @@
             kurang-lebih 1,5 jam.
           </p>
         </article>
-      </aside>
+      </div>
 
       <aside>
-        <header class="logo">
-          <h3>Kabupaten Kediri</h3>
-          <img src="img/logokabkediri.png" alt="logokabkediri" width="100" />
-        </header>
+        <article class="card">
+          <div class="logo">
+            <h3>Kabupaten Kediri</h3>
+            <img src="img/logokabkediri.png" alt="logokabkediri" />
+          </div>
+
+          <h3>Informasi Lainnya</h3>
+          <table>
+            <tr>
+              <td><b>Negara</b></td>
+              <td>Indonesia</td>
+            </tr>
+            <tr>
+              <td><b>Hari Jadi</b></td>
+              <td>25 Maret 804 M</td>
+            </tr>
+            <tr>
+              <td><b>Luas Total</b></td>
+              <td>1.523,97 km²</td>
+            </tr>
+            <tr>
+              <td><b>Bahasa Daerah</b></td>
+              <td>Jawa</td>
+            </tr>
+            <tr>
+              <td><b>Kode Telepon</b></td>
+              <td>+62 22</td>
+            </tr>
+          </table>
+        </article>
       </aside>
 
       <footer>
